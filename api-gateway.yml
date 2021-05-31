@@ -1,9 +1,8 @@
-zuul:
-  prefix: /api
-  ignoredServices: '*'
-  routes:
-    businesses-service: /business/**
-    api-gateway: /gateway/**
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 server:
   port: 8080
